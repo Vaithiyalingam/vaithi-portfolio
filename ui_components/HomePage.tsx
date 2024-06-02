@@ -31,17 +31,21 @@ export const HomePage = () => {
         </div>
       ) : (
         <div className="">
-          <h1 className="text-[120px] font-leagueGothic font-bold leading-[0.8em] text-whiteBold">
+          <h1 className="hidden lg:block text-[120px] font-leagueGothic font-bold leading-[0.8em] text-whiteBold">
             HI, I'M <span className="text-primary">VAITHIYALINGAM S</span>.
           </h1>
-          <div className="flex flex-col gap-14 items-center mt-20 ml-14">
-            <div className="grid grid-cols-12 gap-10">
+          <h1 className="block lg:hidden text-[70px] font-leagueGothic font-bold leading-[0.8em] text-whiteBold">
+            HI, I'M <br />
+            <span className="text-primary  pt-2">VAITHIYALINGAM S</span>.
+          </h1>
+          <div className="flex flex-col gap-14 mt-20 lg:ml-14 ml-4">
+            <div className="lg:grid grid-cols-12 gap-10">
               <div className="col-span-2">
                 <h3 className="font-inter font-bold text-[24px] leading-[1.2em] text-white">
                   FRONTEND <br /> DEVELOPER
                 </h3>
               </div>
-              <div className="col-span-10">
+              <div className="col-span-10 mt-5 lg:mt-0">
                 <p className="font-inter font-normal text-[16px] leading-[1.2em] text-whiteLight">
                   I'm a passionate React developer with nearly three years of
                   experience building engaging user interfaces. Specializing in
@@ -55,13 +59,13 @@ export const HomePage = () => {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-12 gap-10">
+            <div className="lg:grid grid-cols-12 gap-10">
               <div className="col-span-2">
                 <h3 className="font-inter font-bold text-[24px] leading-[1.2em] text-white">
                   SELECTED <br /> WORKS
                 </h3>
               </div>
-              <div className="col-span-10">
+              <div className="col-span-10 mt-5 lg:mt-0">
                 <div className="flex flex-col gap-5">
                   {selectedWorks.map((item: ISelectedWorks, ind) => {
                     return (
@@ -70,11 +74,13 @@ export const HomePage = () => {
                         onClick={() => {
                           handleProjectClick(item);
                         }}
+                        role="presentation"
+                        key={ind}
                       >
                         <p className="font-inter font-normal text-[16px] leading-[1.2em] text-whiteLight">{`0${
                           ind + 1
                         }`}</p>
-                        <p className="text-[60px] font-leagueGothic font-bold leading-[0.8em] text-primary">
+                        <p className="lg:text-[60px] text-[40px] font-leagueGothic font-bold leading-[0.8em] text-primary">
                           {item.name}
                         </p>
                       </div>
