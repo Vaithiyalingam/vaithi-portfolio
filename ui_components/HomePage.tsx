@@ -47,7 +47,7 @@ export const HomePage = () => {
               </div>
               <div className="col-span-10 mt-5 lg:mt-0">
                 <p className="font-inter font-normal text-[16px] leading-[1.2em] text-whiteLight">
-                  I'm a passionate React developer with nearly three years of
+                  I'm a passionate React developer with three years of
                   experience building engaging user interfaces. Specializing in
                   React JS and React Native, I thrive on tackling complex
                   challenges like crafting intricate UI animations and building

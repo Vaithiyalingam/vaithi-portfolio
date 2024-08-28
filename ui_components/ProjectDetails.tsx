@@ -1,6 +1,8 @@
 import { FC } from "react";
 import { ISelectedWorks } from "../constants";
 import Image from "next/image";
+import Link from "next/link";
+import { icons } from "../utils/images";
 
 export interface IProjectDetail {
   details: ISelectedWorks;
@@ -23,9 +25,26 @@ export const ProjectDetails: FC<IProjectDetail> = ({
           Back
         </p>
       </div>
-      <h1 className="text-[60px] lg:text-[120px] font-leagueGothic font-bold leading-[0.8em] text-whiteBold">
-        {details.name}
-      </h1>
+      <div className="md:flex items-start gap-5">
+        <h1 className="text-[60px] lg:text-[120px] font-leagueGothic font-bold leading-[0.8em] text-whiteBold">
+          {details.name}
+        </h1>
+        <Link
+          href={details.link}
+          target="_blank"
+          className="font-inter flex items-center gap-1 font-normal text-[16px] leading-[1.2em] text-primary"
+        >
+          Visit
+          <span>
+            <Image
+              width={16}
+              height={16}
+              src={icons.externalLink}
+              alt="external link"
+            />
+          </span>
+        </Link>
+      </div>
       <div className="mt-10">
         <p className="font-inter font-normal text-[16px] leading-[1.2em] text-whiteLight">
           {details.description}

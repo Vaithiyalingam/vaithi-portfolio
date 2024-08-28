@@ -7,6 +7,7 @@ export interface ISelectedWorks {
   myContributions: string;
   techStacks: string;
   isMobile: boolean;
+  link: string;
 }
 
 export interface IFooterLinks {
@@ -24,6 +25,7 @@ export const selectedWorks: ISelectedWorks[] = [
       "In the Frontier Wallet extension, I played a pivotal role in enhancing the user interface, ensuring a seamless and intuitive user experience. I implemented core functionalities to guarantee robust performance and reliability. Additionally, I developed the buy feature, enabling users to effortlessly purchase cryptocurrencies directly within the wallet. My contributions also extended to the transaction functionalities within the Cosmos ecosystem using Inter-Blockchain Communication (IBC), further enhancing the wallet's capabilities and user satisfaction.",
     techStacks: "Reactjs, Nextjs, Typescript, Framer motion, TailwindCss",
     isMobile: true,
+    link: "https://chromewebstore.google.com/detail/frontier-wallet/kppfdiipphfccemcignhifpjkapfbihd",
   },
   {
     name: "FRONTIER WEBSITE",
@@ -34,6 +36,7 @@ export const selectedWorks: ISelectedWorks[] = [
       "During the campaign period, I led the development of compelling UI animations and streamlined wallet connection transaction functionalities for the Frontier website. Additionally, I worked on features tabs, pages UI, and animations using Framer Motion, contributing to enriching the user experience and achieving our campaign goals effectively.",
     techStacks: "Reactjs, Typescript, Framer motion, TailwindCss",
     isMobile: false,
+    link: "https://www.frontier.xyz/",
   },
   {
     name: "BLIO BLOCKCHAIN EXPLORER",
@@ -44,6 +47,7 @@ export const selectedWorks: ISelectedWorks[] = [
       "In Blio, I developed core functionalities including contract verification, listing pages, and UIs for a blockchain explorer. Using Next.js, React, TypeScript, and Tailwind CSS, I ensured a robust and responsive solution for users, whether they were new to blockchain or enthusiasts. These features provided transparency in transactions and organized blockchain data effectively, while the UIs were designed to enhance usability and accessibility across devices.",
     techStacks: "Reactjs, Nextjs, Typescript, Framer motion, TailwindCss",
     isMobile: false,
+    link: "https://manta.blio.xyz/",
   },
   {
     name: "BLOCKTHEORY WEBSITE",
@@ -54,51 +58,52 @@ export const selectedWorks: ISelectedWorks[] = [
       "In the development of the BlockTheory website, I played a pivotal role in implementing several key features. I developed the blog functionalities, including both list and detail pages, ensuring smooth navigation and a seamless reading experience. Additionally, I created author profiles that effectively showcase contributors and their contributions to the platform. One of the highlights of my work was designing and implementing the interactive `Decodes` sections using Framer Motion. These sections use rich animations to dynamically explain complex Web3 concepts, enhancing the educational value of the platform.",
     techStacks: "Reactjs, Nextjs, Typescript, Framer motion, TailwindCss",
     isMobile: false,
+    link: "https://blocktheory.com/",
   },
-  {
-    name: "SL DEMO",
-    description:
-      "The SL SDK Demo (sl-demo) is a web application developed to showcase the functionalities of the Silent Labs SDK. This SDK provides developers with tools to integrate secure and private communication features into their applications. The sl-demo web application is designed to demonstrate these capabilities through interactive and engaging examples.",
-    demoImgs: [icons.demoHome, icons.demoWalletSetup, icons.demoSandbox],
-    myContributions:
-      "In the SL SDK Demo project, I played a crucial role in designing and developing the entire web application. I focused on creating a user-friendly interface that effectively highlights the features of the Silent Labs SDK. This included designing and implementing core functionalities, user interface components, and interactive animations. The animations were particularly important as they dynamically demonstrate the SDK's functionalities, making them more accessible and engaging for potential users. Overall, my contributions were aimed at providing a compelling demonstration of the SDK's capabilities, helping developers understand how they can integrate secure communication solutions into their own applications.",
-    techStacks: "Reactjs, Nextjs, Typescript, Framer motion, TailwindCss",
-    isMobile: false,
-  },
-  {
-    name: "SL BOILERPLATE",
-    description:
-      "The SL Boilerplate demonstrates the practical use cases of the Silent Labs SDK functions in a mobile application. It serves as a foundational template for developers looking to integrate secure and private communication features into their apps. The boilerplate showcases functionalities such as secure data signing with TEE, face verification with FaceTec, and includes various UI components designed to enhance user experience and security.",
-    demoImgs: [
-      icons.boilerplateOnboarding,
-      icons.boilerplateBackup,
-      icons.boilerplateHome,
-    ],
-    myContributions:
-      "In this project, I designed and developed a comprehensive mobile app boilerplate using React Native and TypeScript. My focus was on integrating essential native modules like FaceTec for face verification, TEE for secure data signing, and various UI components. Additionally, I ensured the boilerplate was well-documented with comprehensive code comments explaining the purpose of the code. This approach enhances maintainability and facilitates the faster implementation of future mobile features.",
-    techStacks: "React Native, Typescript, Tamagui",
-    isMobile: true,
-  },
-  {
-    name: "COSMO AI",
-    description:
-      "Cosmo is an AI superapp designed to automate your digital life, serving as an automation platform powered by AI to streamline everyday tasks. The mobile application features robust functionalities that leverage AI capabilities to simplify daily routines.",
-    demoImgs: [icons.cosmoHome, icons.cosmoChat, icons.cosmoSpeechToText],
-    myContributions:
-      "In the development of Cosmo, I focused on two key areas: the onboarding UI and functionalities, and the chat page with complex dynamic UI integrations. For the onboarding process, I designed and implemented a user-friendly interface that guides users seamlessly through the initial setup of the app, ensuring a smooth and intuitive experience. Additionally, I enhanced the chat page by integrating complex and dynamic UI elements to facilitate rich user interaction. This included real-time updates, interactive components, and intuitive design features. I also implemented the speech-to-text feature, further enhancing usability and accessibility within the Cosmo AI superapp.",
-    techStacks: "React Native, Typescript, Tamagui",
-    isMobile: true,
-  },
-  {
-    name: "CLINK",
-    description:
-      "Clink is an innovative project developed during the EthGlobal Superhack Hackathon, aimed at simplifying the sharing of crypto assets through a lightweight wallet using just a link. The project utilizes ERC-4337 and integrates various technologies like Safe Core SDK, Base, Trust Wallet Wallet Core, Next.js, Web3Auth, and Gelato.",
-    demoImgs: [icons.clinkOnboard, icons.clinkTx],
-    myContributions:
-      "In the development of Clink, I contributed to the entire functionality of the application. This included handling transactions (txs), implementing wallet connect features, and creating account abstraction for the lightweight wallet. My efforts were crucial in ensuring the seamless operation and security of crypto token sharing through links, making Clink a practical and user-friendly solution for cryptocurrency enthusiasts.",
-    techStacks: "Reactjs, Nextjs, Typescript, TailwindCss",
-    isMobile: false,
-  },
+  // {
+  //   name: "SL DEMO",
+  //   description:
+  //     "The SL SDK Demo (sl-demo) is a web application developed to showcase the functionalities of the Silent Labs SDK. This SDK provides developers with tools to integrate secure and private communication features into their applications. The sl-demo web application is designed to demonstrate these capabilities through interactive and engaging examples.",
+  //   demoImgs: [icons.demoHome, icons.demoWalletSetup, icons.demoSandbox],
+  //   myContributions:
+  //     "In the SL SDK Demo project, I played a crucial role in designing and developing the entire web application. I focused on creating a user-friendly interface that effectively highlights the features of the Silent Labs SDK. This included designing and implementing core functionalities, user interface components, and interactive animations. The animations were particularly important as they dynamically demonstrate the SDK's functionalities, making them more accessible and engaging for potential users. Overall, my contributions were aimed at providing a compelling demonstration of the SDK's capabilities, helping developers understand how they can integrate secure communication solutions into their own applications.",
+  //   techStacks: "Reactjs, Nextjs, Typescript, Framer motion, TailwindCss",
+  //   isMobile: false,
+  // },
+  // {
+  //   name: "SL BOILERPLATE",
+  //   description:
+  //     "The SL Boilerplate demonstrates the practical use cases of the Silent Labs SDK functions in a mobile application. It serves as a foundational template for developers looking to integrate secure and private communication features into their apps. The boilerplate showcases functionalities such as secure data signing with TEE, face verification with FaceTec, and includes various UI components designed to enhance user experience and security.",
+  //   demoImgs: [
+  //     icons.boilerplateOnboarding,
+  //     icons.boilerplateBackup,
+  //     icons.boilerplateHome,
+  //   ],
+  //   myContributions:
+  //     "In this project, I designed and developed a comprehensive mobile app boilerplate using React Native and TypeScript. My focus was on integrating essential native modules like FaceTec for face verification, TEE for secure data signing, and various UI components. Additionally, I ensured the boilerplate was well-documented with comprehensive code comments explaining the purpose of the code. This approach enhances maintainability and facilitates the faster implementation of future mobile features.",
+  //   techStacks: "React Native, Typescript, Tamagui",
+  //   isMobile: true,
+  // },
+  // {
+  //   name: "COSMO AI",
+  //   description:
+  //     "Cosmo is an AI superapp designed to automate your digital life, serving as an automation platform powered by AI to streamline everyday tasks. The mobile application features robust functionalities that leverage AI capabilities to simplify daily routines.",
+  //   demoImgs: [icons.cosmoHome, icons.cosmoChat, icons.cosmoSpeechToText],
+  //   myContributions:
+  //     "In the development of Cosmo, I focused on two key areas: the onboarding UI and functionalities, and the chat page with complex dynamic UI integrations. For the onboarding process, I designed and implemented a user-friendly interface that guides users seamlessly through the initial setup of the app, ensuring a smooth and intuitive experience. Additionally, I enhanced the chat page by integrating complex and dynamic UI elements to facilitate rich user interaction. This included real-time updates, interactive components, and intuitive design features. I also implemented the speech-to-text feature, further enhancing usability and accessibility within the Cosmo AI superapp.",
+  //   techStacks: "React Native, Typescript, Tamagui",
+  //   isMobile: true,
+  // },
+  // {
+  //   name: "CLINK",
+  //   description:
+  //     "Clink is an innovative project developed during the EthGlobal Superhack Hackathon, aimed at simplifying the sharing of crypto assets through a lightweight wallet using just a link. The project utilizes ERC-4337 and integrates various technologies like Safe Core SDK, Base, Trust Wallet Wallet Core, Next.js, Web3Auth, and Gelato.",
+  //   demoImgs: [icons.clinkOnboard, icons.clinkTx],
+  //   myContributions:
+  //     "In the development of Clink, I contributed to the entire functionality of the application. This included handling transactions (txs), implementing wallet connect features, and creating account abstraction for the lightweight wallet. My efforts were crucial in ensuring the seamless operation and security of crypto token sharing through links, making Clink a practical and user-friendly solution for cryptocurrency enthusiasts.",
+  //   techStacks: "Reactjs, Nextjs, Typescript, TailwindCss",
+  //   isMobile: false,
+  // },
   {
     name: "BATTLE OF CARDS",
     description:
@@ -108,6 +113,7 @@ export const selectedWorks: ISelectedWorks[] = [
       "In the 'Battle of Cards' project, I led the design and development of the entire user interface (UI). I focused on creating a visually appealing and user-friendly interface to enhance the gaming experience. My work aimed to provide intuitive navigation, engaging visuals, and seamless interactions, ensuring an immersive gameplay experience for WWE fans and strategy enthusiasts.",
     techStacks: "Reactjs, Nextjs, Typescript, TailwindCss",
     isMobile: false,
+    link: "https://devfolio.co/projects/battle-of-cards-7fd4",
   },
 ];
 

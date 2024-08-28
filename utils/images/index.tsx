@@ -23,6 +23,7 @@ import bocOnboarding from "../../public/assets/boc_onboarding.png";
 import blockHome from "../../public/assets/block_home.png";
 import blockDecode from "../../public/assets/block_decode.png";
 import blockDecodeListing from "../../public/assets/block_decode_listing.png";
+import externalLink from "../../public/assets/external_link.png";
 
 export type TImages =
   | "blioTx"
@@ -49,7 +50,8 @@ export type TImages =
   | "bocGame"
   | "blockHome"
   | "blockDecode"
-  | "blockDecodeListing";
+  | "blockDecodeListing"
+  | "externalLink";
 
 export type TNextImage = {
   src: string;
@@ -83,4 +85,5 @@ export const icons: Record<TImages, TNextImage> = {
   blockHome,
   blockDecode,
   blockDecodeListing,
+  externalLink,
 };
