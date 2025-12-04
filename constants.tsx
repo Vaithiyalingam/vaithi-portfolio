@@ -17,6 +17,17 @@ export interface IFooterLinks {
 
 export const selectedWorks: ISelectedWorks[] = [
   {
+    name: "PIE PORTAL",
+    description:
+      "Pie is an AI-first QA automation platform that replaces traditional scripted test suites with autonomous agents. It explores applications like a real user — clicking, swiping, navigating flows, and uncovering regressions — all with vision-based testing instead of brittle selectors. Teams can achieve up to 80% end-to-end coverage within minutes, with no code or setup required. Pie integrates seamlessly with CI/CD, Slack, and developer workflows, providing fast, reliable testing across Web, iOS, and Android builds.",
+    demoImgs: [icons.pieExploration, icons.pieTestCase, icons.pieCustomTc],
+    myContributions:
+      "Engineered an end-to-end intelligent test-running platform featuring a fully customizable test builder, real-time execution dashboard, and live screenshot pipeline. Designed optimized Remix loaders, TypeScript-first modules, and RxJS-powered data streams to handle continuous updates without UI lag. Improved performance by lazy-loading heavy components, restructuring data boundaries, and reducing redundant Firestore listeners — achieving a 3+ second drop in load time and 40–60% fewer reads. Built Cloud Functions and utility layers to automate event handling, alerts, and background tasks.",
+    techStacks: "Reactjs, Remix, RxJS, Firebase, Cloud Functions, Typescript, Shadcn, TailwindCss",
+    isMobile: false,
+    link: "https://app.pie.inc/",
+  },
+  {
     name: "FRONTIER EXTENSION",
     description:
       "The Frontier Wallet extension is a browser-based cryptocurrency wallet designed to facilitate the management of digital assets and interaction with decentralized applications (dApps). Supporting multiple blockchains like Ethereum, Binance Smart Chain, Polygon, and Solana, it allows users to handle various cryptocurrencies within a single interface, the extension offers essential wallet functions such as sending, receiving, swapping, bridging, and buying cryptocurrencies, while also enabling interaction with DeFi activities like staking and yield farming.",
@@ -115,6 +126,7 @@ export const selectedWorks: ISelectedWorks[] = [
     isMobile: false,
     link: "https://devfolio.co/projects/battle-of-cards-7fd4",
   },
+
 ];
 
 export const footerLinks: IFooterLinks[] = [
@@ -124,7 +136,7 @@ export const footerLinks: IFooterLinks[] = [
   },
   {
     name: "GITHUB",
-    link: "https://github.com/VaithiDS",
+    link: "https://github.com/vaithi97",
   },
   {
     name: "ABOUTME",

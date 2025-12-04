@@ -24,6 +24,9 @@ import blockHome from "../../public/assets/block_home.png";
 import blockDecode from "../../public/assets/block_decode.png";
 import blockDecodeListing from "../../public/assets/block_decode_listing.png";
 import externalLink from "../../public/assets/external_link.png";
+import pieExploration from "../../public/assets/pie_exploration.png";
+import pieTestCase from "../../public/assets/pie_test_case.png";
+import pieCustomTc from "../../public/assets/pie_custom_tc.png";
 
 export type TImages =
   | "blioTx"
@@ -51,7 +54,10 @@ export type TImages =
   | "blockHome"
   | "blockDecode"
   | "blockDecodeListing"
-  | "externalLink";
+  | "externalLink"
+  | "pieExploration"
+  | "pieTestCase"
+  | "pieCustomTc";
 
 export type TNextImage = {
   src: string;
@@ -86,4 +92,7 @@ export const icons: Record<TImages, TNextImage> = {
   blockDecode,
   blockDecodeListing,
   externalLink,
+  pieExploration,
+  pieTestCase,
+  pieCustomTc,
 };

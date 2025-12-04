@@ -47,15 +47,7 @@ export const HomePage = () => {
               </div>
               <div className="col-span-10 mt-5 lg:mt-0">
                 <p className="font-inter font-normal text-[16px] leading-[1.2em] text-whiteLight">
-                  I'm a passionate React developer with three years of
-                  experience building engaging user interfaces. Specializing in
-                  React JS and React Native, I thrive on tackling complex
-                  challenges like crafting intricate UI animations and building
-                  highly interactive web experiences. My award-winning hackathon
-                  projects are a testament to my commitment to innovation and
-                  continuous learning in the ever-evolving world of front-end
-                  development. Eager for new challenges, I'm ready to contribute
-                  to your innovative projects and drive exceptional results.
+                Frontend Engineer specializing in high-performance UI engineering, real-time systems, and scalable front-end architecture. I’ve built complex interfaces such as live testing dashboards, dynamic execution viewers with real-time screenshot updates, responsive blockchain explorers, and interactive UI workflows. I focus heavily on performance optimization — improving load times, reducing unnecessary network operations, and optimizing rendering paths. My experience spans React, Next.js, Remix, TypeScript, RxJS, Firebase, and real-time WebSocket environments. I enjoy solving deep technical challenges and building products that feel fast, polished, and reliable at scale.
                 </p>
               </div>
             </div>
