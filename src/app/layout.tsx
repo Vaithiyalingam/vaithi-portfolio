@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Sora, Playfair_Display } from "next/font/google";
 import "../../styles/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const sora = Sora({
+  subsets: ["latin"],
+  variable: "--font-sora"
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair"
+});
 
 export const metadata: Metadata = {
-  title: "Vaithiyalingam Sowmiyan Porfolio",
-  description: "Overview of my skills and works",
+  title: "Vaithiyalingam | Frontend Developer",
+  description: "Frontend Developer based in India. Specializing in React, Next.js, and modern web technologies.",
 };
 
 export default function RootLayout({
@@ -15,8 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${sora.variable} ${playfair.variable} font-sans antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
